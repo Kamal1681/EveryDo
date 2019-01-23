@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C5F08D21F8A7EE00C9D228 /* ToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C5F08C21F8A7EE00C9D228 /* ToDoViewController.m */; };
 		15CCB26421F7B8DC00281C70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCB26321F7B8DC00281C70 /* AppDelegate.m */; };
 		15CCB26721F7B8DC00281C70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCB26621F7B8DC00281C70 /* ViewController.m */; };
 		15CCB26A21F7B8DC00281C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCB26821F7B8DC00281C70 /* Main.storyboard */; };
 		15CCB26C21F7B8DF00281C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CCB26B21F7B8DF00281C70 /* Assets.xcassets */; };
 		15CCB26F21F7B8DF00281C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CCB26D21F7B8DF00281C70 /* LaunchScreen.storyboard */; };
 		15CCB27221F7B8DF00281C70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCB27121F7B8DF00281C70 /* main.m */; };
+		15CCB27A21F7B98300281C70 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CCB27921F7B98300281C70 /* ToDo.m */; };
+		15FD909B21F7DC3700CE4D30 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FD909A21F7DC3700CE4D30 /* TableViewCell.m */; };
+		15FD909E21F7E6AF00CE4D30 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FD909D21F7E6AF00CE4D30 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15C5F08B21F8A7EE00C9D228 /* ToDoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoViewController.h; sourceTree = "<group>"; };
+		15C5F08C21F8A7EE00C9D228 /* ToDoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoViewController.m; sourceTree = "<group>"; };
 		15CCB25F21F7B8DC00281C70 /* EveryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CCB26221F7B8DC00281C70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CCB26321F7B8DC00281C70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		15CCB26E21F7B8DF00281C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15CCB27021F7B8DF00281C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15CCB27121F7B8DF00281C70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15CCB27821F7B98300281C70 /* ToDo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDo.h; sourceTree = "<group>"; };
+		15CCB27921F7B98300281C70 /* ToDo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDo.m; sourceTree = "<group>"; };
+		15FD909921F7DC3700CE4D30 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		15FD909A21F7DC3700CE4D30 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		15FD909C21F7E6AF00CE4D30 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		15FD909D21F7E6AF00CE4D30 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +74,15 @@
 				15CCB26321F7B8DC00281C70 /* AppDelegate.m */,
 				15CCB26521F7B8DC00281C70 /* ViewController.h */,
 				15CCB26621F7B8DC00281C70 /* ViewController.m */,
+				15CCB27821F7B98300281C70 /* ToDo.h */,
+				15CCB27921F7B98300281C70 /* ToDo.m */,
+				15FD909921F7DC3700CE4D30 /* TableViewCell.h */,
+				15FD909A21F7DC3700CE4D30 /* TableViewCell.m */,
 				15CCB26821F7B8DC00281C70 /* Main.storyboard */,
+				15C5F08B21F8A7EE00C9D228 /* ToDoViewController.h */,
+				15C5F08C21F8A7EE00C9D228 /* ToDoViewController.m */,
+				15FD909C21F7E6AF00CE4D30 /* DetailViewController.h */,
+				15FD909D21F7E6AF00CE4D30 /* DetailViewController.m */,
 				15CCB26B21F7B8DF00281C70 /* Assets.xcassets */,
 				15CCB26D21F7B8DF00281C70 /* LaunchScreen.storyboard */,
 				15CCB27021F7B8DF00281C70 /* Info.plist */,
@@ -142,8 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CCB26721F7B8DC00281C70 /* ViewController.m in Sources */,
+				15C5F08D21F8A7EE00C9D228 /* ToDoViewController.m in Sources */,
 				15CCB27221F7B8DF00281C70 /* main.m in Sources */,
 				15CCB26421F7B8DC00281C70 /* AppDelegate.m in Sources */,
+				15FD909B21F7DC3700CE4D30 /* TableViewCell.m in Sources */,
+				15CCB27A21F7B98300281C70 /* ToDo.m in Sources */,
+				15FD909E21F7E6AF00CE4D30 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
