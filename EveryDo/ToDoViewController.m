@@ -20,20 +20,28 @@
     
     
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"Add ToDo task"]) {
-        
-        UIViewController* rootView = segue.destinationViewController;
-        
-        ToDo * todo = [[ToDo alloc]initWithTitle:self.toDoTitle.text description:self.toDoDescription.text priority:[self.toDoPriority.text integerValue]];
-        todo.isCompleted = NO;
-        
-        [self.delegate addNewRow:todo];
-       
-        
-    }
+- (IBAction)addNewRow:(id)sender {
+     ToDo * todo = [[ToDo alloc]initWithTitle:self.toDoTitle.text description:self.toDoDescription.text priority:[self.toDoPriority.text integerValue]];
+          todo.isCompleted = NO;
+    
+           [self.delegate addNewRow:todo];
+    [self.navigationController popViewControllerAnimated:YES];
 }
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"Add ToDo task"]) {
+//
+//        UIViewController* rootView = segue.destinationViewController;
+//
+//        ToDo * todo = [[ToDo alloc]initWithTitle:self.toDoTitle.text description:self.toDoDescription.text priority:[self.toDoPriority.text integerValue]];
+//        todo.isCompleted = NO;
+//
+//        [self.delegate addNewRow:todo];
+//        [rootView popoverPresentationController];
+//
+//
+//    }
+//}
 /*
 #pragma mark - Navigation
 

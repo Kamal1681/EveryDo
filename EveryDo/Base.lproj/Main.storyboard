@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jBK-ad-Z3Z">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OI6-0O-JfY">
                                     <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -189,8 +189,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
+                                    <action selector="addNewRow:" destination="mUQ-bC-zle" eventType="touchUpInside" id="S4i-qs-fwY"/>
                                     <action selector="reloadTableData:" destination="zpd-7m-rnj" eventType="touchUpInside" id="ni9-Lk-bpn"/>
-                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="Add ToDo task" id="o1f-re-yEq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -227,7 +227,4 @@
             <point key="canvasLocation" x="-273" y="14"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="o1f-re-yEq"/>
-    </inferredMetricsTieBreakers>
 </document>

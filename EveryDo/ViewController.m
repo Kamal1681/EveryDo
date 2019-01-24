@@ -12,8 +12,9 @@
 #import "DetailViewController.h"
 #import "ToDoViewController.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, AddToDoTask>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, AddToDoTask, RemoveToDoTask>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (nonatomic) NSMutableArray <ToDo *> * myList;
 
 
@@ -33,7 +34,7 @@
     for (ToDo * tD in dataTemp) {
         [self.myList addObject:tD];
     }
-
+     
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -51,9 +52,15 @@
     }
 }
 -(void) addNewRow: (ToDo *) todo {
-    //[[self.myList mutableCopy]addObject:todo];
+    
     [self.myList addObject:todo];
-    NSLog(@"%@", self.myList[4].title);
+   
+    [UITableView load];
+    [self.tableView reloadData];
+}
+- (void) removeCompletedRow: (ToDo *) todo {
+   
+    [self.myList removeObject:todo];
     [UITableView load];
     [self.tableView reloadData];
 }
@@ -71,8 +78,10 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
     TableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"task"];
+    
     ToDo * task = self.myList[indexPath.row];
     [cell configureCell:task];
+    cell.delegate = self;
     return cell;
 }
 

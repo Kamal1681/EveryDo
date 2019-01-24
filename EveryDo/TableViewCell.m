@@ -25,6 +25,7 @@
     [self.titleLabel setText:row.title];
     [self.descriptionLabel setText:row.toDoDescription];
     self.task = row;
+    
     UISwipeGestureRecognizer * toDoComplete = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeToComplete:)];
     [self addGestureRecognizer:toDoComplete];
     toDoComplete.direction = UISwipeGestureRecognizerDirectionRight;
@@ -32,6 +33,7 @@
 }
 - (void) swipeToComplete: (UISwipeGestureRecognizer *) sender {
     self.task.isCompleted = YES;
+    [self.delegate removeCompletedRow:self.task];
 }
 
 
