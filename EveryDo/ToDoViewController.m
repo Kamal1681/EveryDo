@@ -28,9 +28,10 @@
         
         ToDo * todo = [[ToDo alloc]initWithTitle:self.toDoTitle.text description:self.toDoDescription.text priority:[self.toDoPriority.text integerValue]];
         todo.isCompleted = NO;
+        
         [self.delegate addNewRow:todo];
        
-        NSLog(@"%@ %@", todo.title, todo.toDoDescription);
+        
     }
 }
 /*

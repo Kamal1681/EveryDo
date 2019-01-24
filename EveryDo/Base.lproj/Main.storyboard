@@ -190,7 +190,7 @@
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="reloadTableData:" destination="zpd-7m-rnj" eventType="touchUpInside" id="ni9-Lk-bpn"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Add ToDo task" id="o1f-re-yEq"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="Add ToDo task" id="o1f-re-yEq"/>
                                 </connections>
                             </button>
                         </subviews>
